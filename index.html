@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+        <title>Optymyze test</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Add Product</h1>
+                <h2>Second-Hand Car</h2>
+            </div>
+            <div class="categories">
+                <ul><li><a href="#">Automobiles</a></li></ul>
+            </div>
+        </header>
+        <section>
+            <form action="#" method="post" id="form1">
+                <div class="row">
+                    <label for="title">Title of announcement: </label>
+                    <input type="text" id="title" name="title" required><br>
+                </div>
+                <div class="row">
+                    <label for="brand">Make/Brand: </label>
+                    <select name="brand" id="brand" onchange="showBrandImg()">
+                        <option value="0">Please Select</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="dacia">Dacia</option>
+                        <option value="opel">Opel</option>
+                    </select> <br>
+                </div>
+                <div class="row">
+                    <label for="manufacturing">Manufacturing Year: </label>
+                    <input type="text" id="manufacturing" name="manufacturing" required><br>
+                </div>
+                <div class="row">
+                    <label for="mileage">Mileage: </label>
+                    <input type="number" id="mileage" name="mileage" required><br>
+                </div>
+                <div class="row">
+                    <label for="fuel">Fuel type: </label>
+                    <input type="text" id="fuel" name="fuel" required><br>
+                </div>
+                <div class="row">
+                    <label for="color">Color: </label>
+                    <input type="color" id="color" name="color" value="#000" required><br>
+                </div>
+                <input type="submit" onclick="submitFunc1()" value="Submit">
+                <img src="#" alt="" id="brand-img" width="150">
+            </form>
+            <hr>
+            <form action="#" method="post">
+                <div class="row">
+                    <label for="vehicle">Vehicle damaged: </label>
+                    <select name="vehicle" id="vehicle" onchange="showVehicleDetails()">
+                        <option value="0">Please select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select> <br>
+                </div>
+                <div class="row" id="hiddenDetails">
+                    <label for="vehicleDetails">Vehicle damage Details: </label>
+                    <textarea name="vehicleDetails" id="vehicleDetails" cols="30" rows="10" required></textarea><br><br>
+                </div>
+
+                <div class="row">
+                    <label for="price">Price: </label>
+                    <input type="number" id="price" name="price" required><br>
+                </div>
+                <div class="row">
+                    <label for="currency"> Currency: </label>
+                    <input type="number" id="currency" name="currency required"><br>
+                </div>
+                <div class="row">
+                    <label for="description">Description: </label>
+                    <input type="text" id="description" name="description" required><br>
+                </div>
+                <input type="submit" value="Save">
+                <input type="reset" value="Cancel">
+            </form>
+
+        </section>
+        <footer>
+            <!-- Here will be the footer-->
+        </footer>
+    </body>
+</html>
